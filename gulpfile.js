@@ -12,7 +12,7 @@ gulp.task('concat-minify', () => {
 
 gulp.task('copy-files', () => {
      return gulp.src(['./dist/*'])
-    .pipe(gulp.dest(path.join(__dirname, '../node-js/static/js')));
+    .pipe(gulp.dest(path.join(__dirname, '../node-knockout-example/static/js')));
 });
 
 gulp.task('default', gulp.series(['concat-minify', 'copy-files']));
