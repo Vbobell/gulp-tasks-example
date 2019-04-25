@@ -5,7 +5,7 @@ class ContactView {
     }
 
     setObservable() {
-        this.contactController.getContact((contacts) => {
+        this.contactController.getContact(( {contacts} ) => {
 
             contacts.forEach((contact) => {
                 let person = new Person(contact.person.name, contact.person.birthDate);
