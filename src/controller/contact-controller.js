@@ -4,7 +4,7 @@ class ContactController {
     }
 
     getContact(callback) {
-        this.xhr.open('GET', "/contact", true);
+        this.xhr.open('GET', "/static/contacts.json", true);
 
         this.xhr.onload = () => {
             this.xhr.status === 200 ? 
